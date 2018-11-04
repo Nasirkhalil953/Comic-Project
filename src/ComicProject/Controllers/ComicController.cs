@@ -10,7 +10,7 @@ namespace ComicProject.Controllers
     {
         public ActionResult Detail()
         {
-            if (DateTime.Today.DayOfWeek == DayOfWeek.Sunday)
+            if (DateTime.Today.DayOfWeek == DayOfWeek.Friday)
             {
                 return Redirect("/");
             }
