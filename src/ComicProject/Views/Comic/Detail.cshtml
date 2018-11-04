@@ -3,7 +3,7 @@
     var seriesTitle = "The Amazing Spider Man";
     var itemNumber = 700;
     var description = "<p>this si the paragraph which I wrote first time during...<strong>programing of ASP.NET</strong></p>";
-    var auther = new string[]
+    var authers = new string[]
     {
         "script : ABC",
         "Pencil : GHI",
@@ -26,7 +26,19 @@
         <h5>Description :
             <div> @Html.Raw(description) </div>
         </h5>
-        <div>@auther</div>
+        @if (authers.Length > 0)
+        {
+            <h5>Writers :</h5>
+            <div>
+                <ul>
+                    @foreach (var auther in authers)
+                    {
+                        <li>@auther</li>
+                    }
+                </ul>
+            </div>
+        }
+       
     </div>
 </body>
 </html>
