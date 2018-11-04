@@ -1,15 +1,5 @@
 ﻿@{
     Layout = null;
-    var seriesTitle = "The Amazing Spider Man";
-    var itemNumber = 700;
-    var description = "<p>this si the paragraph which I wrote first time during...<strong>programing of ASP.NET</strong></p>";
-    var authers = new string[]
-    {
-        "script : ABC",
-        "Pencil : GHI",
-        "Ink color : JKL",
-        "Writer : MNO"
-    };
 }
 
 <!DOCTYPE html>
@@ -21,24 +11,24 @@
 </head>
 <body>
     <div>
-        <h1>Title = @seriesTitle</h1>
-        <h2>Number of Items : @itemNumber</h2>
-        <h5>Description :
-            <div> @Html.Raw(description) </div>
+        <h1>Title = @ViewBag.SeriesTitle</h1>
+        <h2>Number of Items: @ViewBag.ItemNumber</h2>
+        <h5>
+            Description :
+            <div> @Html.Raw(ViewBag.Description) </div>
         </h5>
-        @if (authers.Length > 0)
+        @if (ViewBag.Authers.Length > 0)
         {
-            <h5>Writers :</h5>
+            <h5>Writers:</h5>
             <div>
                 <ul>
-                    @foreach (var auther in authers)
+                    @foreach (var auther in ViewBag.Authers)
                     {
                         <li>@auther</li>
                     }
                 </ul>
             </div>
         }
-       
     </div>
 </body>
 </html>
