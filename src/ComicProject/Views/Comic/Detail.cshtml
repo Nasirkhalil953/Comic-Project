@@ -1,5 +1,15 @@
 ﻿@{
     Layout = null;
+    var seriesTitle = "The Amazing Spider Man";
+    var itemNumber = 700;
+    var description = "<p>this si the paragraph which I wrote first time during...<strong>programing of ASP.NET</strong></p>";
+    var auther = new string[]
+    {
+        "script : ABC",
+        "Pencil : GHI",
+        "Ink color : JKL",
+        "Writer : MNO"
+    };
 }
 
 <!DOCTYPE html>
@@ -11,7 +21,12 @@
 </head>
 <body>
     <div>
-    
+        <h1>Title = @seriesTitle</h1>
+        <h2>Number of Items : @itemNumber</h2>
+        <h5>Description :
+            <div> @Html.Raw(description) </div>
+        </h5>
+        <div>@auther</div>
     </div>
 </body>
 </html>

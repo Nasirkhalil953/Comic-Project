@@ -14,7 +14,7 @@ namespace ComicProject.Controllers
             {
                 return Redirect("/");
             }
-            return Content("Hello from the Action Controller");
+            return View();
         }
     }
 }
