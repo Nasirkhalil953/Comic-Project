@@ -16,13 +16,17 @@ namespace ComicProject.Controllers
             //}
             ViewBag.SeriesTitle = "The Amazing Spider Man";
             ViewBag.ItemNumber = 700;
-            ViewBag.Description = "<p>this si the paragraph which I wrote first time during...<strong>programing of ASP.NET</strong></p>";
+            ViewBag.Description = "<p>Based on<Strong> Marvel Comics'</Strong> superhero character," +
+                                  " this is a story of <Strong>Peter Parker</Strong> who is a nerdy high school." +
+                                  " He was orphaned as a child, bullied by jocks, and can't confess " +
+                                  "his crush for his stunning neighborhood girl <Strong>Mary Jane Watson</Strong>." +
+                                  " To say his life is is an understatement</p>";
             ViewBag.Authers = new string[]
             {
-                "script : ABC",
-                "Pencil : GHI",
-                "Ink color : JKL",
-                "Writer : MNO"
+                "script : Alpha",
+                "Pencil : HB Products",
+                "Ink color : Jeown Library",
+                "Writer : Nasir Khalil"
             };
 
 
