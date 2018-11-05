@@ -3,15 +3,15 @@
     ViewBag.Title = "Comic Details";
 
 }
-        <h1>Title = @ViewBag.SeriesTitle</h1>
-        <h2>Number of Items: @ViewBag.ItemNumber</h2>
-        <h5>
-            Description :
-            <div> @Html.Raw(ViewBag.Description) </div>
-        </h5>
-        @if (ViewBag.Authers.Length > 0)
-        {
-            <h5>Writers:</h5>
+<h1>Title = @ViewBag.SeriesTitle</h1>
+<h2>Number of Items: @ViewBag.ItemNumber</h2>
+<h5>
+    Description :
+    <div> @Html.Raw(ViewBag.Description) </div>
+</h5>
+@if (ViewBag.Authers.Length > 0)
+{
+    <h5>Writers:</h5>
             <div>
                 <ul>
                     @foreach (var auther in ViewBag.Authers)
@@ -20,4 +20,4 @@
                     }
                 </ul>
             </div>
-        }
+}
