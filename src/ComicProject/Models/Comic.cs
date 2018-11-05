@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.`;
+using System.Collections;
 using System.Linq;
 using System.Web;
 
@@ -13,5 +13,21 @@ namespace ComicProject.Models
         public string Description { get; set; }
         public Artist[] Artists { get; set; }
         public bool Favorites { get; set; }
+
+        public string DisplayText
+        {
+            get
+            {
+                return SeriesTitle + "#" + IssueNumber;
+            }
+        }
+
+        public string CoverImageFileName
+        {
+            get
+            {
+                return SeriesTitle.Replace("", "-").ToLower() + "-" + IssueNumber+".jpg";
+            }
+        }
     }
 }
