@@ -1,22 +1,24 @@
-﻿@{
+﻿@model ComicProject.Models.Comic
+
+@{
     Layout = "../Shared/_Layout.cshtml";
-    ViewBag.Title = "Comic Details";
+    ViewBag.Title = Model.DisplayText;
 
 }
-<h1>Title = @ViewBag.SeriesTitle</h1>
-<h2>Number of Items: @ViewBag.ItemNumber</h2>
+<h1>Title = @Model.SeriesTitle</h1>
+<h2>Number of Items: @Model.IssueNumber</h2>
 <h5>
     Description :
-    <div> @Html.Raw(ViewBag.Description) </div>
+    <div> @Html.Raw(Model.DescriptionHtml) </div>
 </h5>
-@if (ViewBag.Authers.Length > 0)
+@if (Model.Artists.Length > 0)
 {
     <h5>Writers:</h5>
             <div>
                 <ul>
-                    @foreach (var auther in ViewBag.Authers)
+                    @foreach (var artist in Model.Artists)
                     {
-                        <li>@auther</li>
+                        <li>@artist.Role: @artist.Name</li>
                     }
                 </ul>
             </div>
