@@ -14,7 +14,7 @@ namespace ComicProject.Data
             {
                 SeriesTitle = "The Amazing Spider Man",
                 IssueNumber = 700,
-                DescriptionHtml = "<p>Based on<Strong> Marvel Comics'</Strong> superhero character," +
+                  DescriptionHtml = "<p>Based on<Strong> Marvel Comics'</Strong> superhero character," +
                                   " this is a story of <Strong>Peter Parker</Strong> who is a nerdy high school." +
                                   " He was orphaned as a child, bullied by jocks, and can't confess " +
                                   "his crush for his stunning neighborhood girl <Strong>Mary Jane Watson</Strong>." +

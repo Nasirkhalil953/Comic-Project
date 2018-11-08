@@ -3,15 +3,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using ComicProject.Data;
 using ComicProject.Models;
 
 namespace ComicProject.Controllers
 {
     public class ComicController : Controller
     {
-        public ActionResult Detail()
+        private ComicRepository _comicRepository = null;
+
+        public ComicController()
         {
+            _comicRepository = new ComicRepository();
+        }
+
+        public ActionResult Detail(int? id)
+        {
+            if (id == null)
+            {
+                return HttpNotFound();
+            }
+            var comic = _comicRepository.GetComic((int)id);
             
+
+
             //if (DateTime.Today.DayOfWeek == DayOfWeek.Friday)
             //{
             //    return Redirect("/");
