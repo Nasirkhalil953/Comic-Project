@@ -17,6 +17,12 @@ namespace ComicProject.Controllers
             _comicRepository = new ComicRepository();
         }
 
+        public ActionResult Index()
+        {
+            var comic = _comicRepository.GetComics();
+            return View(comic);
+        }
+
         public ActionResult Detail(int? id)
         {
             if (id == null)

@@ -88,6 +88,12 @@ namespace ComicProject.Data
         Favorites = false
     },
 };
+
+        public Comic[] GetComics()
+        {
+            return _comics;
+        }
+
         public Comic GetComic(int id)
         {
             Comic comicToReturn = null;
