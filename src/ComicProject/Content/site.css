@@ -20,6 +20,7 @@ textarea {
 .backbar{
   width: 100%;
   background-color: #555;
+    color-profile: #483d8b);
   margin-top: -10px;
   height: 45px;
 }

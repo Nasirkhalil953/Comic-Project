@@ -18,7 +18,8 @@ namespace ComicProject.Models
         {
             get
             {
-                return SeriesTitle + "#" + IssueNumber;
+                return SeriesTitle;
+                //return SeriesTitle + "#" + IssueNumber;
             }
         }
 
