@@ -1,7 +1,19 @@
-﻿
+﻿@model ComicProject.Models.Comic[]
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Comic -Home";
 }
 
-<h2>Index</h2>
+<h2>@ViewBag.Title</h2>
+<div class="row">
+    @foreach (var comic in Model)
+    {
+        <div class="col-md-4">
+            <h4>@comic.DisplayText</h4>
+            <img src="/Images/@comic.CoverImageFileName"
+                 alt="@comic.DisplayText"
+                 class="img-responsive"/>
+        </div>
+    }
+    
+</div>
 
