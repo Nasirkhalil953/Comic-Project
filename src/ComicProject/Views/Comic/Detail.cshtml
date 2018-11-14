@@ -1,8 +1,9 @@
 ﻿@model ComicProject.Models.Comic
 
 @{
-    Layout = "../Shared/_Layout.cshtml";
+   // Layout = "../Shared/_Layout.cshtml";
     ViewBag.Title = Model.DisplayText;
+    ViewBag.ShowBackBar = true;
 
 }
 <h2>@Model.DisplayText</h2>

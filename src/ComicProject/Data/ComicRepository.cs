@@ -15,7 +15,7 @@ namespace ComicProject.Data
         Id = 1,
         SeriesTitle = "Google",
         IssueNumber = 1,
-        DescriptionHtml = "<p>Originally known as BackRub, Google is a search engine that started development in 1996 by Sergey Brin and Larry Page as a research project at Stanford University to find files on the Internet. Larry and Sergey later decided the name of their search engine needed to change and decide upon Google, which is inspired from the term googol. The company is currently based out of Mountain View, California.</strong></p>",
+        DescriptionHtml = "<p>Originally known as BackRub, <Strong>Google</Strong> is a <Strong>search engine</Strong> that started development in <Strong>1996</Strong> by <Strong>Sergey Brin</Strong> and <Strong>Larry Page</Strong> as a research project at <Strong>Stanford University</Strong> to find files on the <Strong>Internet</Strong>. <Strong>Larry and Sergey</Strong> later decided the name of their search engine needed to change and decide upon <Strong>Google</Strong>, which is inspired from the term <Strong>googol</Strong>.The company is currently based out of Mountain View, <Strong>California</Strong>.</p>",
         Artists = new Artist[]
         {
             new Artist() { Name = "Dan Slott", Role = "Script" },
@@ -47,7 +47,7 @@ namespace ComicProject.Data
         Id = 3,
         SeriesTitle = "Summer",
         IssueNumber = 3,
-        DescriptionHtml = "<p><strong>The Dungeon & The Parapet, Part 1.</strong> Thorn is discovered by Lord Tarsil and the corrupted Stickeaters and thrown into a dungeon with Fone Bone. As she sleeps, a message comes to her about the mysterious \"Crown of Horns\".</p>",
+        DescriptionHtml = "<p>People generally take advantage of the high temperatures by spending more time outdoors during <Strong>summer</Strong>. Activities such as travelling to the beach and picnics occur during the summer months</p>",
         Artists = new Artist[]
         {
             new Artist() { Name = "Jeff Smith", Role = "Script" },
@@ -62,7 +62,7 @@ namespace ComicProject.Data
         Id = 4,
         SeriesTitle = "iphoneX",
         IssueNumber = 4,
-        DescriptionHtml = "<p><strong>The Dungeon & The Parapet, Part 1.</strong> Thorn is discovered by Lord Tarsil and the corrupted Stickeaters and thrown into a dungeon with Fone Bone. As she sleeps, a message comes to her about the mysterious \"Crown of Horns\".</p>",
+        DescriptionHtml = "<p>The <Strong>iPhone X</Strong> is intended to showcase what <Strong>Apple</Strong> considers technology of the future, specifically adopting <Strong>OLED screen technology</Strong> for the first time in iPhone history, as well as using a glass and stainless-steel form factor, offering <Strong>wireless charging</Strong>, and removing the <Strong>home button</Strong> in favor of introducing a new <Strong>bezel-less design</Strong>, almost removing all the bezels in the Smart Phone</p>",
         Artists = new Artist[]
         {
             new Artist() { Name = "Jeff Smith", Role = "Script" },
@@ -77,7 +77,7 @@ namespace ComicProject.Data
         Id = 5,
         SeriesTitle = "lamborghini",
         IssueNumber = 5,
-        DescriptionHtml = "<p><strong>The Dungeon & The Parapet, Part 1.</strong> Thorn is discovered by Lord Tarsil and the corrupted Stickeaters and thrown into a dungeon with Fone Bone. As she sleeps, a message comes to her about the mysterious \"Crown of Horns\".</p>",
+        DescriptionHtml = "<p>An <Strong>Italian</Strong> manufacturing magnate, founded <Strong>Automobili Ferruccio Lamborghini S.p.A.</Strong> in 1963 to compete with established <Strong>marques</Strong>, including <Strong>Ferrari</Strong>. The company gained wide acclaim in <Strong>1966</Strong> for the <Strong>Miura sports coupé</Strong></p>",
         Artists = new Artist[]
         {
             new Artist() { Name = "Jeff Smith", Role = "Script" },
